@@ -111,6 +111,33 @@ const home = () => {
         },
     ]
 
+    const cardItemSlide = [
+        {
+            id:1,
+            image : require("../assets/images/start_img.png"),
+            company : 'BOOMCO',
+            title : 'Basic Korean for everyday life1',
+            text :"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mi mi adipiscing neque nunc netus quam dictum. ",
+            count :'2',
+        },
+        {
+            id:2,
+            image : require("../assets/images/start_img.png"),
+            company : 'BOOMCO',
+            title : 'Basic Korean for everyday life2',
+            text :"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mi mi adipiscing neque nunc netus quam dictum. ",
+            count :'2',
+        },
+        {
+            id:3,
+            image : require("../assets/images/start_img.png"),
+            company : 'BOOMCO',
+            title : 'Basic Korean for everyday life3',
+            text :"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor mi mi adipiscing neque nunc netus quam dictum. ",
+            count :'4',
+        },
+    ]
+
 
   return (
       <div className="wrap">
@@ -154,7 +181,7 @@ const home = () => {
                             className="mySwiper"
                         >
                             {slideData.map((data, idx) => (
-                                <SwiperSlide key={'slideData+' + idx }>
+                                <SwiperSlide key={'slideData_' + idx }>
                                 <div className="slide-top">
                                     <div className="user_img">
                                         <img src={data.image} alt="" />
@@ -215,7 +242,7 @@ const home = () => {
                               <div className="card01_wrap">
                                   <ul className="card_list">
                                       {cardItem.map((card, idx) => (
-                                          <Card01 data={card} />
+                                          <Card01 data={card} key={"idx_" + idx} />
                                         ))}
                                   </ul>
                               </div>
@@ -233,8 +260,8 @@ const home = () => {
                             </div>
                             <div className="card01_wrap">
                                 <ul className="card_list">
-                                    {cardItem.map((card, idx) => (
-                                        <Card01 data={card} />
+                                    {cardItemSlide.map((cardItem, idx) => (
+                                        <Card01 data={cardItem} key={"idx_" + idx} />
                                     ))}
                                 </ul>
                             </div>
@@ -261,8 +288,8 @@ const home = () => {
                             </div>
                             <div className="card01_wrap">
                                 <ul className="card_list">
-                                    {cardItem.map((card, idx) => (
-                                        <Card01 data={card} view={false} />
+                                    {cardItemSlide.map((cardItem, idx) => (
+                                        <Card01 data={cardItem} view={false} />
                                     ))}
                                 </ul>
                             </div>
