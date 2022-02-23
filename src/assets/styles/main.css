@@ -1,0 +1,242 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    z-index: 5;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    grid-gap:85px;
+}
+.header_left h1 {
+    display: flex;
+}
+.header_left h1 img {
+    width: 125px;
+}
+
+.header_left .nav_list {
+    display: flex;
+    grid-gap: 60px;
+}
+.header_left .nav_list .nav_item {}
+.nav_item a {
+    font-size: 17px;
+}
+
+.header_right {}
+.header_right .util {
+    display: flex;
+    align-items: center;
+    grid-gap:30px;
+}
+.header_right .util .user {}
+.header_right .util .user .photo {}
+.header_right .util .user .name {}
+
+.header_right .util .cart {
+    cursor: pointer;
+}
+.header_right .util .cart img {
+    width: 22px;
+}
+.header_right .util .language {
+    cursor: pointer;
+}
+
+.main_banner {
+    height: 567px;
+    width: 100%;
+    background: #fff;
+}
+
+.main_banner .banner_text {
+    margin-top: 70px;
+}
+.banner_text .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.banner_text .main_title {
+    margin-top: 10px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.banner_text .explain {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.section {}
+.section.section01 {}
+
+.section01 {}
+.section01 .title_wrap {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section01 .title_wrap .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+.section01 .title_wrap .title span {
+    color: #ED1B23;
+}
+.section01 .title_wrap .sub_title {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.section02 {
+    margin-top: 80px;
+}
+.section02 .util_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section02 .util_wrap .input_wrap {
+    position: relative;
+}
+.section02 .util_wrap input {
+    border: 1px solid #bdbdbd;
+    border-radius: 60px;
+    min-width: 341px;
+    height: 45px;
+    padding: 0 60px 0 24px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.section02 .util_wrap input::placeholder {
+    color: #bdbdbd;
+}
+.section02 .util_wrap .button {
+    position: absolute;
+    right: 24px;
+    top: 17px;
+    background: url("../images/search.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size:cover;
+}
+.section02 .util_wrap .select_wrap {
+    display: flex;
+    grid-gap:8px;
+}
+.section02 .util_wrap .select {
+    min-width: 120px;
+}
+.section02 .util_wrap .select.select01 {
+    min-width: 153px;
+}
+
+
+
+.section02 .card_group_wrap .card_group .card01_wrap {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section02 .card_group_wrap .card_group .card01_wrap .card_list {
+    margin-right: -20px;
+}
+
+.section02 .card_group_wrap .card_group .card01_wrap .card_list:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.section03 .card_group_wrap .card_group .card01_wrap {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section03 .card_group_wrap .card_group .card01_wrap .card_list {
+    margin-right: -20px;
+}
+
+.section03 .card_group_wrap .card_group .card01_wrap .card_list:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.section04 {
+    margin-top: 30px;
+}
+
+.section04 .banner {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.section04 .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section05 {
+    margin-top: 60px;
+}
+
+.section05 .card_group_wrap .card_group .card01_wrap {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section05 .card_group_wrap .card_group .card01_wrap .card_list {
+    margin-right: -20px;
+}
+
+.section05 .card_group_wrap .card_group .card01_wrap .card_list:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+.footer {
+    background: #F2F2F2;
+    margin-top: auto;
+    height: 70px;
+    line-height: 70px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .copyright {
+    color:#828282;
+}
+.footer .icon_list {
+    display: flex;
+    align-items: center;
+    grid-gap: 35px;
+}
+.footer .icon_list .icon_item {}
+.footer .icon_list .icon_item img {
+    width: 20px;
+}

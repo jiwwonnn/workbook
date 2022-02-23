@@ -1,0 +1,6 @@
+@import './reset.css';
+@import './common.css';
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "./main.css";
+@import "./slide.css";
