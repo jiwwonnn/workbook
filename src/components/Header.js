@@ -7,7 +7,9 @@ const Header = () => {
           <div className="container">
             <div className="header_left">
                 <h1>
-                    <img src={require("../assets/images/header_logo.png")} alt="logo" />
+                    <Link to="/">
+                        <img src={require("../assets/images/header_logo.png")} alt="logo" />
+                    </Link>
                 </h1>
                 <ul className="nav_list">
                     <li className="nav_item">
@@ -25,7 +27,9 @@ const Header = () => {
                 <ul className="util">
                     <li className="user">
                         <div className="photo"></div>
-                        <div className="name">USER_01</div>
+                        <div className="name">
+                            <Link to="/mypage">USER_01</Link>
+                        </div>
                     </li>
                     <li className="cart">
                         <img src={require("../assets/images/basket.png")} alt="logo" />

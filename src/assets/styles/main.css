@@ -22,6 +22,11 @@
 .header_left h1 {
     display: flex;
 }
+
+.header_left h1 a {
+    display: flex;
+    padding-bottom: 10px;
+}
 .header_left h1 img {
     width: 125px;
 }

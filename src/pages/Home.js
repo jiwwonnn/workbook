@@ -147,7 +147,7 @@ const home = () => {
                   <div className="container">
                       <div className="banner_text">
                           <p className='title'>First Step</p>
-                          <p className="main_title">Have fun studing korean<br /> With boomco</p>
+                          <p className="main_title">Have fun studying korean<br /> With boomco</p>
                           <p className="explain">Learn the most trendy Korean.fastest,<br /> Study Korean with my favorite KPOP or K-Drama!</p>
                       </div>
                   </div>
@@ -242,7 +242,7 @@ const home = () => {
                               <div className="card01_wrap">
                                   <ul className="card_list">
                                       {cardItem.map((card, idx) => (
-                                          <Card01 data={card} key={"idx_" + idx} />
+                                          <Card01 data={card} key={"idx_" + idx} view={true}/>
                                         ))}
                                   </ul>
                               </div>
@@ -261,7 +261,7 @@ const home = () => {
                             <div className="card01_wrap">
                                 <ul className="card_list">
                                     {cardItemSlide.map((cardItem, idx) => (
-                                        <Card01 data={cardItem} key={"idx_" + idx} />
+                                        <Card01 data={cardItem} key={"idx_" + idx} view={true}/>
                                     ))}
                                 </ul>
                             </div>
