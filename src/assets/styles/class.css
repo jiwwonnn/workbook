@@ -46,6 +46,7 @@
 .class_wrap {
     margin-top: 97px;
     display: flex;
+    justify-content: space-between;
 }
 
 .class_left {
@@ -65,6 +66,108 @@
     color: #ED1B23;
     border-bottom:2px solid #ED1B23;
 }
+
+
+.class_right {
+    box-shadow: 0px 2px 6px rgba(41, 42, 43, 0.16);
+    border-radius: 3px;
+    max-width: 400px;
+    max-height:317px;
+    padding: 30px;
+}
+.class_right .info {}
+.class_right .info .curriculum {
+    font-size: 15px;
+    font-weight: 700;
+}
+.class_right .info .name {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid #dadada;
+}
+
+.class_right .money {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.class_right .money_left {
+    display: flex;
+    grid-gap: 16px
+}
+.class_right .money .per {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ce3b33;
+}
+.class_right .money .won {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.class_right .money_right {}
+.class_right .discount {
+    font-size: 16px;
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+.class_right .button {
+    margin-top: 24px;
+    width: 100%;
+    min-height: 50px;
+    background: #ce3b33;
+    color:#fff;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.class_right .util_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.class_right .util_item {
+    padding-left: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.class_right .util_item:after {
+    content:"";
+    display: block;
+    position: absolute;
+    right: -20px;
+    width: 1px;
+    height: 24px;
+    background:#dadada;
+    top: 0;
+}
+.class_right .util_item:last-child:after {
+    content:none;
+}
+.class_right .util_item.add {
+    background:url("../images/add.png") no-repeat;
+    background-size:20px;
+    background-position: left center;
+}
+.class_right .util_item.heart {
+    background:url("../images/black_empty_heart.png") no-repeat;
+    background-size:20px;
+    background-position: left center;
+}
+.class_right .util_item.share {
+    background:url("../images/share.png") no-repeat;
+    background-position: left center;
+    background-size: 20px;
+}
+
 
 .introduce_wrap {
     margin-top: 30px;
@@ -176,3 +279,73 @@
     height: 900px;
     background: #f7f9fa;
 }
+
+.curriculum_wrap {
+    margin-top: 30px;
+}
+.curri {}
+.curri .info_wrap .text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ED1B23;
+}
+.curri .info_wrap .name {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+.curri .info_wrap .detail {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.accordion_wrap {
+    margin-top: 30px;
+}
+.accordion_wrap .accordion {}
+.accordion_wrap .accordion_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f9fa;
+    min-height:70px;
+    padding: 0 24px;
+    border-bottom: 2px solid #000;
+    cursor:pointer
+}
+.accordion_wrap .accordion_title .name {
+    font-size: 18px;
+}
+.accordion_wrap .accordion_title .info {
+    font-size: 13px;
+    color: #999;
+} 
+.accordion_wrap .accordion_content {
+    border: 1px solid #f4f4f4;
+    padding: 10px 0;
+} 
+.accordion_wrap .accordion_content .content_list {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+} 
+.accordion_wrap .accordion_content .content_list .name {
+    font-size: 16px;
+}
+.accordion_wrap .accordion_content .content_list .time {
+    font-size: 16px;
+} 
+
+
+
+
+
+
+
+

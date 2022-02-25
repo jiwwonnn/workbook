@@ -25,6 +25,18 @@ const Class = () => {
             count: '2',
         }
     ]
+
+    const curriList = [
+        {
+            id:'1',
+            name:'01 - Have fun studying Korean with boomco',
+            info: 'Lesson 3 ∙ 2 hours 6 minutes',
+            listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
+            time : '05:36',
+        }
+    ]
+
+
     return (
         <div className="wrap">
             <Header />
@@ -69,7 +81,36 @@ const Class = () => {
                                 {tab[activeTab]}
                             </div>
                         </div>
-                        <div className="class_right"></div>
+                        <div className="class_right">
+                            <div className="info">
+                                <p className="curriculum">Curriculum</p>
+                                <p className="name">Total 118 Class • 19 hours and 
+                                22 minutes of class</p>
+                            </div>
+                            <div className="money">
+                                <div className="money_left">
+                                    <p className="per">10%</p>
+                                    <p className="won">140,000 won</p>
+                                </div>
+                                <div className="money_right">
+                                    <p className="discount">154,000won</p>
+                                </div>
+                            </div>
+                            <button className="button">
+                                    Add to basket
+                            </button>
+                            <ul className="util_list">
+                                <li className="util_item add">
+                                    add my list
+                                </li>
+                                <li className="util_item heart">
+                                    2,831
+                                </li>
+                                <li className="util_item share">
+                                    share
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
