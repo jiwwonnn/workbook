@@ -5,12 +5,13 @@ import Class from './pages/Class';
 import Community from './pages/Community';
 import Workbook from './pages/Workbook';
 import Mypage from './pages/Mypage';
-
+import ScrollTop from './components/ScrollTop';
 
 
 function App() {
   return (
     <Router>
+      <ScrollTop />
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/class" element={<Class />} />

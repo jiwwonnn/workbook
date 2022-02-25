@@ -40,6 +40,7 @@
 .bg_content .text_wrap .info {
     margin-top: 25px;
     display: flex;
+    grid-gap:16px;
 }
 
 
@@ -341,6 +342,99 @@
 .accordion_wrap .accordion_content .content_list .time {
     font-size: 16px;
 } 
+
+
+
+
+
+.review_wrap {
+    margin-top: 30px;
+}
+.review {}
+.review .info_wrap {}
+.review .info_wrap .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review .info_wrap .info .text {
+    color:#ED1B23;
+    font-size: 22px;
+    font-weight: 700;
+}
+.review .info_wrap .info .number {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.review .info_wrap .sub_text {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.review .score_wrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.review .score_wrap .score_left {
+    min-width:192px;
+    min-height:159px;
+    border: 1px solid #dadada;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-gap:10px;
+}
+.review .score_left .score_mark {
+    font-size: 40px;
+}
+.review .score_left .number {
+    font-size: 16px;
+    color: #828282;
+}
+
+.review .score_wrap .score_right {
+    min-width: 506px;
+    min-height: 159px;
+    border: 1px solid #dadada;
+    border-radius:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review .score_right .graph_wrap {}
+.review .score_right .graph_wrap .graph {
+    display: flex;
+    align-items: center;
+    grid-gap:18px;
+    margin-top: 9px;
+}
+.review .score_right .graph_wrap .graph:first-child {
+    margin-top: 0;
+}
+.review .score_right .graph_wrap .graph .score {
+    font-size: 18px;
+    color: #333;
+    width: 20px;
+}
+.review .score_right .graph_wrap .graph .line_wrap {
+    position: relative;
+    width: 296px;
+    background: #dadada;
+    border-radius: 10px;
+    height: 5px;
+}
+.review .score_right .graph_wrap .graph .line_wrap .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ffc700;
+    border-radius: 10px;
+    height: 5px;
+}
 
 
 

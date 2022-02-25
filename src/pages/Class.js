@@ -26,15 +26,7 @@ const Class = () => {
         }
     ]
 
-    const curriList = [
-        {
-            id:'1',
-            name:'01 - Have fun studying Korean with boomco',
-            info: 'Lesson 3 ∙ 2 hours 6 minutes',
-            listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
-            time : '05:36',
-        }
-    ]
+
 
 
     return (

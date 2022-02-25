@@ -2,12 +2,103 @@ import React, { useState } from 'react'
 
 const Curriculum = () => {
 
-  // 드롭다운 메뉴 어떻게만드는거지 ... ????
-  const [accordionOpen, setAccordionOpen] = useState(true);
+  const curriList = [
+    {
+        name:'01 - Have fun studying Korean with boomco',
+        info: 'Lesson 3 ∙ 2 hours 6 minutes',
+        list :[ 
+          {
+            listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
+            listtime : '05:36',
+          },
+          {
+            listname : 'Basic Korean Grammar Structure (1)',
+            listtime : '05:36',
+          },
+          {
+            listname : 'Basic Korean Grammar Structure (2)',
+            listtime : '05:36',
+          },
+        ]
+    },
+    {
+      name:'02 - Basic Korean for everyday life',
+      info: 'Lesson 7 ∙ 2 hours 6 minutes',
+      list :[ 
+        {
+          listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (1)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (2)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (3)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (4)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (5)',
+          listtime : '05:36',
+        },
+      ]
+    },
+    {
+      name:'03 - Have fun studying Korean with boomco',
+      info: 'Lesson 3 ∙ 2 hours 6 minutess',
+      list :[ 
+        {
+          listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (1)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (2)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (3)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (4)',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (5)',
+          listtime : '05:36',
+        },
+      ]
+    },
+    {
+      name:'04 - Have fun studying Korean with boomco',
+      info: 'Lesson 3 ∙ 2 hours 6 minutess',
+      list :[ 
+        {
+          listname : 'Start Korean: Pronunciation, Hangul, and consonant sounds combined',
+          listtime : '05:36',
+        },
+        {
+          listname : 'Basic Korean Grammar Structure (1)',
+          listtime : '05:36',
+        },
+      ]
+    },
+  ]
 
-  const onClickOpen = () => {
-    setAccordionOpen(!accordionOpen);
-  }
+  // 드롭다운 메뉴 어떻게만드는거지 ... ????
+
 
   return (
     <div className="curriculum_wrap">
@@ -21,27 +112,16 @@ const Curriculum = () => {
         </div>
         <div className="accordion_wrap">
           <div className="accordion">
-            <div className="accordion_title" onClick={onClickOpen}>
-              <p className="name">01 - have fun studying korean with boomco</p>
-              <p className="info">Lesson 3 ∙ 2 hours 6 minutes</p>
+            <div className="accordion_title">
+                <p className="name">3</p>
+                <p className="info">4</p>
             </div>
-            
-              {(accordionOpen &&
-                  <div className="accordion_content">
-                  <div className="content_list">
-                  <p className="name">start korean:pronunciation,hangul, and consonant sounds combined</p>
-                  <p className="time">05:36</p>
-                </div>
+            <div className="accordion_content">
                 <div className="content_list">
-                  <p className="name">start korean:pronunciation,hangul, and consonant sounds combined</p>
-                  <p className="time">05:36</p>
+                    <p className="name">34</p>
+                    <p className="time">34</p>
                 </div>
-                <div className="content_list">
-                  <p className="name">start korean:pronunciation,hangul, and consonant sounds combined</p>
-                  <p className="time">05:36</p>
-                </div>
-                </div>
-               )}
+            </div>
           </div>
         </div>
       </div>
