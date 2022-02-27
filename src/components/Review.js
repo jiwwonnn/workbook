@@ -2,6 +2,13 @@ import React from 'react'
 import Star from './Star'
 
 const Review = () => {
+
+  const starNumber = [
+    {
+        count: '5',
+    }
+]
+
   return (
     <div className="review_wrap">
       <div className="review">
@@ -15,7 +22,7 @@ const Review = () => {
           <div className="score_wrap">
             <div className="score_left">
               <p className="score_mark">4.5</p>
-              {/* <Star /> */}
+              <Star data={starNumber[0]} />
               <p className="number">(1,234)</p>
             </div>
             <div className="score_right">
@@ -53,6 +60,12 @@ const Review = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="reivew_tab">
+          <ul className="tab_list">
+            <li className="tab_item"></li>
+          </ul>
         </div>
       </div>
     </div>

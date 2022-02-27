@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Lecture from './Lecture'
 
 const Curriculum = () => {
 
@@ -97,9 +98,6 @@ const Curriculum = () => {
     },
   ]
 
-  // 드롭다운 메뉴 어떻게만드는거지 ... ????
-
-
   return (
     <div className="curriculum_wrap">
       <div className="curri">
@@ -110,20 +108,7 @@ const Curriculum = () => {
           Video, class notes, and attachments are provided for this class. Check the content through preview
           </p>
         </div>
-        <div className="accordion_wrap">
-          <div className="accordion">
-            <div className="accordion_title">
-                <p className="name">3</p>
-                <p className="info">4</p>
-            </div>
-            <div className="accordion_content">
-                <div className="content_list">
-                    <p className="name">34</p>
-                    <p className="time">34</p>
-                </div>
-            </div>
-          </div>
-        </div>
+        <Lecture lectureList={curriList}/>
       </div>
     </div>
   )
