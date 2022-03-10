@@ -212,7 +212,7 @@ const home = () => {
                       <div className="util_wrap">
                           <div className="input_wrap">
                             <input type="text" placeholder='Enter the search term, #tag.'/>
-                            <button className='button'></button>
+                            <button className='button search'></button>
                           </div>
                           <div className="select_wrap">
                               <select className='select select01'>

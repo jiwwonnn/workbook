@@ -324,24 +324,24 @@
 .accordion_wrap .accordion_title .info {
     font-size: 13px;
     color: #999;
-} 
+}
 .accordion_wrap .accordion_content {
     border: 1px solid #f4f4f4;
     padding: 10px 0;
-} 
+}
 .accordion_wrap .accordion_content .content_list {
     padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor:pointer;
-} 
+}
 .accordion_wrap .accordion_content .content_list .name {
     font-size: 16px;
 }
 .accordion_wrap .accordion_content .content_list .time {
     font-size: 16px;
-} 
+}
 
 
 
@@ -388,6 +388,11 @@
     align-items: center;
     grid-gap:10px;
 }
+
+.review .score_wrap .score_left .star_count {
+    display: none;
+}
+
 .review .score_left .score_mark {
     font-size: 40px;
 }

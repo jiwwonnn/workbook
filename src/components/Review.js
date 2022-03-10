@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Star from './Star'
 
 const Review = () => {
@@ -61,12 +61,11 @@ const Review = () => {
             </div>
           </div>
         </div>
-
-        <div className="reivew_tab">
-          <ul className="tab_list">
-            <li className="tab_item"></li>
-          </ul>
-        </div>
+        <ul className="review_tab_list">
+          <li className="review_tab_item">Newest</li>
+          <li className="review_tab_item">High Mark</li>
+          <li className="review_tab_item">Low Mark</li>
+        </ul>
       </div>
     </div>
   )

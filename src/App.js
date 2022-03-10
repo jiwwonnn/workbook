@@ -6,6 +6,7 @@ import Community from './pages/Community';
 import Workbook from './pages/Workbook';
 import Mypage from './pages/Mypage';
 import ScrollTop from './components/ScrollTop';
+import CommuDetail from './components/CommuDetail';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/*" element={<Home />} />
         <Route path="/class" element={<Class />} />
         <Route path="/community" element={<Community />} />
+        <Route path="/community/detail" element={<CommuDetail />} />
         <Route path="/workbook" element={<Workbook />} />
         <Route path="/mypage" element={<Mypage />} />
       </Routes>

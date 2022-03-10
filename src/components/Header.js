@@ -28,7 +28,7 @@ const Header = () => {
                     <li className="user">
                         <div className="photo"></div>
                         <div className="name">
-                            <Link to="/mypage">USER_01</Link>
+                            <Link to="/login">Login</Link>
                         </div>
                     </li>
                     <li className="cart">

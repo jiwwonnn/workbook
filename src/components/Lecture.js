@@ -8,12 +8,12 @@ const Lecture = ({ lectureList }) => {
     return (
         <div className="accordion_wrap">
             {lectureList?.map((lecture, index) => (
-                 <LectureList 
+                 <LectureList
                     lecture={lecture}
                     active={index === active}
                     index={index}
                     handleMenu={handleMenu}
-                /> 
+                />
             ))}
         </div>
     )

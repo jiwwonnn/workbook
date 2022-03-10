@@ -6,7 +6,7 @@
     height: 80px;
     line-height: 80px;
     background: #fff;
-    z-index: 5;
+    z-index: 11;
 }
 
 .header .container {
@@ -107,15 +107,16 @@
 .section02 {
     margin-top: 80px;
 }
-.section02 .util_wrap {
+.util_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.section02 .util_wrap .input_wrap {
     position: relative;
 }
-.section02 .util_wrap input {
+.util_wrap .input_wrap {
+    position: relative;
+}
+.util_wrap input {
     border: 1px solid #bdbdbd;
     border-radius: 60px;
     min-width: 341px;
@@ -124,10 +125,10 @@
     font-family: inherit;
     font-size: 16px;
 }
-.section02 .util_wrap input::placeholder {
+.util_wrap input::placeholder {
     color: #bdbdbd;
 }
-.section02 .util_wrap .button {
+.util_wrap .search {
     position: absolute;
     right: 24px;
     top: 17px;
@@ -136,14 +137,14 @@
     height: 16px;
     background-size:cover;
 }
-.section02 .util_wrap .select_wrap {
+.util_wrap .select_wrap {
     display: flex;
     grid-gap:8px;
 }
-.section02 .util_wrap .select {
+.util_wrap .select {
     min-width: 120px;
 }
-.section02 .util_wrap .select.select01 {
+.util_wrap .select.select01 {
     min-width: 153px;
 }
 
